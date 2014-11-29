@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
   res.json(o);
 });
 
-var port = 3301;
+var port = process.env.PORT || 3301;
 app.set('port', port);
 
 app.listen(port, function () {
