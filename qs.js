@@ -1,7 +1,7 @@
 var qs = require('qs');
 
-var unq = function (string) {
+var index = function (string) {
   return qs.parse(string);
 };
 
-module.exports = unq;
+module.exports = index;

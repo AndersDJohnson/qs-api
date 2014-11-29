@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var url = require('url');
 
-var unq = require('..');
+var qs = require('..');
 
 app.get('/', function (req, res) {
 
@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
   var optsKey = '_';
 
   var query = url.parse(req.url).query;
-  var o = unq(query);
+  var o = qs(query);
 
   var opts = o[optsKey];
   delete o[optsKey];
@@ -25,7 +25,7 @@ app.get('/', function (req, res) {
 
   res.json(o);
 
-  app.set('json spaces', settingsBackup('json spaces'));
+  app.set('json spaces', settingsBackup['json spaces']);
 });
 
 var defaultOpts = {

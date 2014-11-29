@@ -1,1 +1,1 @@
-module.exports = require('./unq');
+module.exports = require('./qs');
