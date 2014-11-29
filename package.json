@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app",
     "test": "mocha test"
   },
   "author": "",
