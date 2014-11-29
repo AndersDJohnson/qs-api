@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var url = require('url');
 
-var unq = require('..')
+var unq = require('..');
 
 app.get('/', function (req, res) {
   var query = url.parse(req.url).query;
