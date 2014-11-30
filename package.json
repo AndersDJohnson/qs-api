@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.10.4",
-    "qs": "^2.3.3"
+    "qs": "^2.3.3",
+    "universal-analytics": "^0.3.6"
   },
   "devDependencies": {
     "mocha": "^2.0.1"

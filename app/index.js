@@ -1,8 +1,13 @@
 var express = require('express');
-var app = express();
 var url = require('url');
-
+var ua = require("universal-analytics");
 var qs = require('..');
+
+var app = express();
+
+var gaId = app.set('ga id', 'UA-57178149-1');
+
+app.use(ua.middleware(gaId));
 
 app.get('/', function (req, res) {
 
