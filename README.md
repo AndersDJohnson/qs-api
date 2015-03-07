@@ -1,4 +1,4 @@
-qs-web
+qs-api
 ======
 
 Web tool to convert query parameters to JSON.
